@@ -1,0 +1,17 @@
+MODEL:
+  NAME: gpt2
+  TYPE: gpt2
+  PRETRAINED: True
+
+DATA:
+  DATASET: wikitext2
+  BATCH_SIZE: 32
+
+FP32: False
+
+QUANT:
+#  N_BITS: 6
+#  EXPONENT: 3
+#  EM_MX: False
+#  BIAS_MX: True
+  SPECIFIC_CFG_PATH: /specific_cfg/gpt2_FP.json

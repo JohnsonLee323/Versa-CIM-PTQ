@@ -1,0 +1,19 @@
+MODEL:
+  NAME: resnet
+  TYPE: resnet
+  PRETRAINED: True
+
+DATA:
+  DATASET: imagenet
+  BATCH_SIZE: 32
+  DATA_PATH: /datasets/ImageNet
+
+FP32: True
+
+QUANT:
+  N_BITS: 6
+  EXPONENT: 3
+  EM_MX: False
+  BIAS_MX: True
+#  SPECIFIC_CFG_PATH: /tmp/pycharm_project_760/specific_cfg/resnet50_FP.json
+

@@ -1,0 +1,5 @@
+# EVALUATE RESNET ON IMAGENET
+python ptq.py --cfg configs/resnet_imagenet.yaml
+
+# EVALUATE GPT2 ON WIKITEXT2
+python ptq.py --cfg configs/gpt2_wikitext2.yaml
