@@ -14,11 +14,17 @@ DATA:
    DATA_PATH = your_dataset_path
 ```
 # Usage
+## Evaluate
 To evaluate quantized resnet-50 on imagenet2012, run
 ```bash
 python ptq.py --cfg configs/resnet_imagenet.yaml
 ```
 To evaluate quantized gpt-2 on wikitext2, run
+```bash
+python ptq.py --cfg configs/gpt2_wikitext2.yaml
+```
+## Configuration
+you can change the configuration in `configs` folder, for example:
 ```bash
 python ptq.py --cfg configs/gpt2_wikitext2.yaml
 ```
