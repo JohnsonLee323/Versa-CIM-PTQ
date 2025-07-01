@@ -24,7 +24,4 @@ To evaluate quantized gpt-2 on wikitext2, run
 python ptq.py --cfg configs/gpt2_wikitext2.yaml
 ```
 ## Configuration
-you can change the configuration in `configs` folder, for example:
-```bash
-python ptq.py --cfg configs/gpt2_wikitext2.yaml
-```
+you can change the configuration in `configs` folder, below I will introduce some important configurable parameters:
