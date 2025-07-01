@@ -14,4 +14,11 @@ DATA:
   DATA_PATH = your_dataset_path
 ```
 # Usage
-To test resnet-50 on imagenet, run
+To evaluate quantized resnet-50 on imagenet2012, run
+```bash
+python ptq.py --cfg configs/resnet_imagenet.yaml
+```
+To evaluate quantized gpt-2 on wikitext2, run
+```bash
+python ptq.py --cfg configs/gpt2_wikitext2.yaml
+```
