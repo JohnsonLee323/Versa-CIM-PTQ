@@ -42,6 +42,4 @@ you can change the configuration in `configs` folder, below I will introduce som
 In specific_cfg folder, you can set quantization precision for specific layers, and you can adjust module whether to quantized in `quantization/net_wrap.py`.
 
 
-If you want to get the result of SNN for VAD, you can get information from websites below:<br>
-VAD: https://gitee.com/ooooooooya/VAD_tutorial/blob/master/model/model.py#L26<br>
-SpikingJelly: https://github.com/fangwei123456/spikingjelly/blob/master/README_cn.md
+Our SNN for VAD is based on an open-souce cnn model (https://gitee.com/ooooooooya/VAD_tutorial/blob/master/model/model.py#L26) and a cnn-to-snn tool (SpikingJelly: https://github.com/fangwei123456/spikingjelly/tree/master).
