@@ -25,5 +25,23 @@ python ptq.py --cfg configs/gpt2_wikitext2.yaml
 ```
 ## Configuration
 you can change the configuration in `configs` folder, below I will introduce some important configurable parameters:
- `FP32`: you can get full-precision 
- `N_BITS`: The globl quantization precision for entire net
+
+`FP32`: Full-precision or quantized model
+
+`N_BITS`: The globl quantization precision for entire modle (can be replaced by specific configuration)
+
+`EXPONENT`: The default exponent bit for FP format
+
+`EMMX`: If True, framework will automatically search for optimal EMR under a given quantization precision
+
+`BIAS_MX`: If EMMX is set to False, this parameter will work to decide whether bias for fp format is searched by framework or default
+
+`SPECIFIC_CFG_PATH`: Specific quantization precision configuration path in specific_cfg folder
+
+
+In specific_cfg folder, you can set quantization precision for specific layers, and you can adjust module whether to quantized in `quantization/net_wrap.py`.
+
+
+If you want to get the result of SNN for VAD, you can get information from websites below:<br>
+VAD: https://gitee.com/ooooooooya/VAD_tutorial/blob/master/model/model.py#L26<br>
+SpikingJelly: https://github.com/fangwei123456/spikingjelly/blob/master/README_cn.md
