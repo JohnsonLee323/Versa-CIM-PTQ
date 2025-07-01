@@ -25,3 +25,5 @@ python ptq.py --cfg configs/gpt2_wikitext2.yaml
 ```
 ## Configuration
 you can change the configuration in `configs` folder, below I will introduce some important configurable parameters:
+`FP32`: you can get full-precision 
+`N_BITS`: The globl quantization precision for entire net
