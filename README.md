@@ -11,7 +11,7 @@ To run example testing, you should download ImageNet2012 dataset for resnet-50, 
 Then you should add the path of dataset to the corresponding configuration *.yaml* file:
  ```bash
 DATA:
-  DATA_PATH = your_dataset_path
+   DATA_PATH = your_dataset_path
 ```
 # Usage
 To evaluate quantized resnet-50 on imagenet2012, run
