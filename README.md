@@ -1,5 +1,5 @@
  # Versa-CIM-PTQ
-Versa-CIM-PTQ is a post-training quantization (PTQ) framework specifically developed to support compute-in-memory (CIM) architectures. This framework offers the flexibility to adaptively adjust the quantization precision across different network layers and can automatically search for the optimal Exponent/Mantissa Ratio (EMR) under a given quantization precision based on the MSE distance between tensors.
+Versa-CIM-PTQ is a post-training quantization (PTQ) framework for Versatile compute-in-memory (VersaCIM) architecture. This framework offers the flexibility to adaptively adjust the quantization precision across different network layers. Based on the MSE distance between tensors, Versa-CIM-PTQ firstly balances the data range and resolutions with arbitrary Exponent-Mantissa Ratio (EMR), enabling the efficient low-precision FP with uphold accuracy. It significantly pushes the envelope of the trade-off between performance and accuracy.
 # Install
 ## Requirement
 First, make sure to have **Python ≥3.12** (tested with Python 3.12.9) and ensure the latest version of pip (tested with 25.0), next install the remaining dependencies using pip:
